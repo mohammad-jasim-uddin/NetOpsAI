@@ -132,6 +132,7 @@ What are common LTE RRC connection failure causes?
 
 NetOpsAI is a telecom-focused RAG assistant built with Python, Streamlit, LangChain, FAISS, SQLite, and LLMs. It enables network engineers to search telecom manuals, SOPs, alarm guides, and incident reports using natural language. The system retrieves relevant document chunks, generates structured troubleshooting answers, provides source references, and logs user queries for operational review.
 
+
 ## Disclaimer
 
 This project is for educational and portfolio purposes. It should not replace official vendor documentation, certified engineering procedures, or critical network operations processes.
