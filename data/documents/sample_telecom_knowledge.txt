@@ -1,0 +1,85 @@
+NetOpsAI Sample Telecom Knowledge Base
+
+SECTION 1: High VSWR Alarm
+
+High VSWR means Voltage Standing Wave Ratio is above the acceptable threshold. It indicates poor matching between the radio unit and antenna system. Common causes include damaged feeder cable, loose RF connector, faulty jumper cable, water ingress, damaged antenna, poor installation, or incorrect antenna connection.
+
+Recommended troubleshooting steps:
+1. Check whether the alarm is active or intermittent.
+2. Verify the affected sector, antenna port, and radio unit.
+3. Inspect RF jumper cables and feeder connections.
+4. Check for loose, corroded, or water-damaged connectors.
+5. Confirm whether recent site work was performed.
+6. Perform VSWR measurement using approved site test equipment.
+7. Replace faulty jumper, feeder, or antenna if confirmed.
+8. Escalate to field operations if physical inspection is required.
+
+SECTION 2: BGP Neighbour Down
+
+BGP neighbour down means the BGP session between two routers is not established. Common causes include IP reachability failure, incorrect remote AS number, TCP port 179 blocked, authentication mismatch, route-map or ACL filtering, interface down, or configuration mismatch.
+
+Recommended troubleshooting steps:
+1. Ping the BGP neighbour IP address.
+2. Check interface status and IP addressing.
+3. Verify local AS and remote AS configuration.
+4. Check TCP port 179 connectivity.
+5. Confirm MD5 authentication settings if used.
+6. Review ACLs, firewall rules, and route policies.
+7. Check router logs for BGP state changes.
+8. Escalate to IP/MPLS team if core routing issue is suspected.
+
+SECTION 3: High Packet Loss
+
+High packet loss can affect voice, data, video, and signalling traffic. Causes include transmission errors, fibre degradation, microwave link fading, congestion, faulty interface, duplex mismatch, QoS misconfiguration, routing instability, or overloaded equipment.
+
+Recommended troubleshooting steps:
+1. Confirm packet loss using ping, traceroute, or monitoring tools.
+2. Identify affected path, site, interface, or service.
+3. Check interface CRC errors, drops, discards, and utilisation.
+4. Verify transmission link health.
+5. Check QoS policy and traffic congestion.
+6. Review recent network changes.
+7. Compare packet loss during peak and off-peak hours.
+8. Escalate if packet loss is widespread or service-impacting.
+
+SECTION 4: LTE RRC Connection Failure
+
+RRC connection failure occurs when a UE fails to establish or maintain Radio Resource Control connection with the LTE network. Causes include poor radio coverage, interference, PRACH issues, admission control failure, congestion, parameter misconfiguration, or core network signalling problems.
+
+Recommended troubleshooting steps:
+1. Check RRC setup success rate KPI.
+2. Review affected cell, sector, and time window.
+3. Check radio coverage and SINR.
+4. Investigate interference and PRACH performance.
+5. Review admission control and congestion KPIs.
+6. Check recent parameter changes.
+7. Compare with neighbouring cells.
+8. Escalate to RF optimisation team if radio issue is suspected.
+
+SECTION 5: OSPF Adjacency Down
+
+OSPF adjacency down means routers failed to form or maintain neighbour relationship. Causes include interface down, area mismatch, hello/dead timer mismatch, authentication mismatch, MTU mismatch, network type mismatch, passive interface setting, or ACL blocking multicast packets.
+
+Recommended troubleshooting steps:
+1. Check interface status.
+2. Verify OSPF area ID.
+3. Confirm hello and dead timers match.
+4. Check authentication settings.
+5. Verify MTU compatibility.
+6. Confirm OSPF network type.
+7. Ensure multicast traffic is not blocked.
+8. Review logs for neighbour state transitions.
+
+SECTION 6: NOC Site Outage SOP
+
+When a site outage occurs, the NOC engineer should validate alarm status, confirm affected services, check power alarms, transmission status, backhaul reachability, radio unit status, and recent maintenance activity.
+
+Standard process:
+1. Confirm alarm from monitoring system.
+2. Check whether the outage is single-site or multi-site.
+3. Verify power, transmission, and equipment alarms.
+4. Ping site management IP.
+5. Check last known status and recent changes.
+6. Open incident ticket with severity classification.
+7. Notify field operations or transmission team as required.
+8. Track restoration updates until closure.
